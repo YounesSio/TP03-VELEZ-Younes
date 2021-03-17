@@ -8,6 +8,9 @@ import { FormsModule } from '@angular/forms';
 import { AdresseComponent } from './adresse/adresse.component';
 import { FooterComponent } from './footer/footer.component';
 import { RecupComponent } from './recup/recup.component';
+import { CatalogueComponent } from './catalogue/catalogue.component';
+import { MoteurDeRechercheComponent } from './moteur-de-recherche/moteur-de-recherche.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,10 +19,12 @@ import { RecupComponent } from './recup/recup.component';
     FormulaireComponent,
     AdresseComponent,
     FooterComponent,
-    RecupComponent
+    RecupComponent,
+    CatalogueComponent,
+    MoteurDeRechercheComponent
   ],
   imports: [
-    BrowserModule,FormsModule
+    BrowserModule,FormsModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
